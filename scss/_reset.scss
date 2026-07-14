@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-cuerpo;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+}

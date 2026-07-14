@@ -1,0 +1,58 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+.navbar{
+    background-color: $color-fondo;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid $color-dorado;
+
+    .navbar-brand { 
+        font-family: $font-titulo;
+        color: $color-dorado;
+        font-size: 1.5rem;
+
+        @include desktop{
+            font-size: 2rem;
+        }
+    }
+
+    .navbar-toggler{
+        border-color: $color-dorado;
+        .navbar-toggler-icon{
+            filter: invert(1) sepia(1) saturate(5) hue-rotate(5deg)
+        }
+    }
+    .nav-desktop{
+        flex-direction: row;
+        gap: 1rem;
+        margin-right: 1rem;
+        .nav-link{
+            font-family: $font-titulo;
+            color: $color-dorado;
+            font-size: 1.1rem;
+            &.active, &:hover{
+                text-shadow: 0 0 10px $color-dorado-suave;
+            }
+        }
+        
+    }
+}
+
+.offcanvas{
+    background-color: $color-fondo;
+    color: $color-dorado;
+    .nav-link{
+        font-family: $font-titulo;
+        color: $color-dorado;
+        &.active, &:hover{
+            color: $color-dorado;
+            text-shadow: 0 0 10px $color-dorado-suave;
+        }
+    }
+}
+
+

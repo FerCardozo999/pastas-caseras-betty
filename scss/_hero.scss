@@ -1,0 +1,141 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include tablet{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .hero-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 100%;
+            object-fit: contain;
+            padding: 0;
+
+            @include tablet{
+                padding-left: 1rem;
+                max-height: 80vh;
+            }
+
+            @include desktop{
+
+            }
+        }
+    }
+
+    .hero-contenido{
+        width: 100%;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        @include tablet{
+            padding: 3rem;
+        }
+
+        @include desktop{
+            margin: 4rem 3rem;
+        }
+
+        h1{
+            text-align: center;
+            font-family: $font-titulo;
+            color: $color-dorado;
+            letter-spacing: $spacing-sm;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+
+            @include tablet{
+                font-size: 2.5rem;
+                margin-bottom: 3rem;
+            }
+
+            @include desktop{
+                font-size: 3.5rem;
+                margin-bottom: 5rem;
+            }
+
+            @include wide{
+                font-size: 5rem;
+            }
+
+        }
+        h2{
+            font-style: italic;
+            text-align: center;
+            color: $color-dorado-suave;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+
+            @include tablet{
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            @include desktop{
+                font-size: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        h3{
+            color: $color-texto;
+            text-align: center;
+            font-size: 0.9rem;
+            letter-spacing: $spacing-sm;
+            margin-bottom: 1.5rem;
+
+            @include tablet{
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+
+            @include desktop{
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+        .hero-buttons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            @include tablet{
+                flex-direction: row;
+                margin-top: 2rem;
+            }
+
+            .hero-button{
+                color: $color-dorado;
+                border: 1px solid $color-dorado;
+                padding: 1rem 1.5rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+                text-align: center;
+                transition: all 0.3s ease;
+
+                @include desktop{
+                    padding: 2rem 3rem;
+                }
+
+                &:hover{
+                    background-color: $color-dorado;
+                    color: $color-fondo;
+                }
+             }
+        }
+    }
+}
