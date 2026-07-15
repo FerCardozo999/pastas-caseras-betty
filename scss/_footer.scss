@@ -2,24 +2,25 @@
 @use "mixins" as *;
 
 .footer{
-    background-color: color.adjust($color-fondo, $lightness: -2%);
+    background-color:#1a0e06;
     border-top: 1px solid $color-dorado;
-    padding: $spacing-lg $spacing-md;
+    padding: $spacing-md $spacing-md;
 
     @include tablet{
-        padding: $spacing-xl $spacing-lg;
+        padding: $spacing-lg $spacing-lg;
     }
 }
 
 .footer-contenido{
     display: grid;
     grid-template-columns: 1fr;
-    gap: $spacing-lg;
+    gap: $spacing-md;
     max-width: 1200px;
     margin: 0 auto;
 
     @include tablet{
         grid-template-columns: 1fr 1fr;
+        gap: $spacing-lg;
     }
 
 }
@@ -43,20 +44,20 @@
     }
 
     img{
-        width: 60px;
-        height: 60px;
-        margin-bottom: $spacing-sm;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0.25rem;
     }
 
     h2{
         font-family: $font-titulo;
         color: $color-dorado;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         letter-spacing: 0.2rem;
         margin-bottom: $spacing-sm;
 
         @include desktop{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -80,7 +81,7 @@
         font-size: 1.1rem;
         letter-spacing: 0.15rem;
         text-transform: uppercase;
-        margin-bottom: $spacing-md;
+        margin-bottom: $spacing-sm;
     }
 
     ul{
@@ -102,13 +103,13 @@
 
 .footer-copy{
     border-top: 1px solid $color-borde;
-    margin-top: $spacing-lg;
-    padding-top: $spacing-md;
+    margin-top: $spacing-md;
+    padding-top: $spacing-sm;
     text-align: center;
 
     p{
         color: $color-dorado-suave;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         letter-spacing: 0.1rem;
     }
 }

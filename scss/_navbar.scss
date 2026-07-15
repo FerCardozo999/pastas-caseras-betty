@@ -18,6 +18,16 @@
         @include desktop{
             font-size: 2rem;
         }
+
+        img{
+            width: 65px;
+            height: 65px;
+
+            @include desktop{
+                width: 75px;
+                height: 75px;
+            }
+        }
     }
 
     .navbar-toggler{

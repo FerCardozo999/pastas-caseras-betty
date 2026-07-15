@@ -37,6 +37,16 @@ a {
     font-size: 2rem;
   }
 }
+.navbar .navbar-brand img {
+  width: 65px;
+  height: 65px;
+}
+@media (min-width: 992px) {
+  .navbar .navbar-brand img {
+    width: 75px;
+    height: 75px;
+  }
+}
 .navbar .navbar-toggler {
   border-color: #C9952A;
 }
@@ -453,26 +463,27 @@ a {
 }
 
 .footer {
-  background-color: rgb(23.84, 13.41, 5.96);
+  background-color: #1a0e06;
   border-top: 1px solid #C9952A;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 @media (min-width: 768px) {
   .footer {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
   }
 }
 
 .footer-contenido {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .footer-contenido {
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 }
 
@@ -496,20 +507,20 @@ a {
   }
 }
 .footer-marca img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 0.5rem;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.25rem;
 }
 .footer-marca h2 {
   font-family: "Playfair Display", Georgia, serif;
   color: #C9952A;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   letter-spacing: 0.2rem;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 992px) {
   .footer-marca h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .footer-marca p {
@@ -532,7 +543,7 @@ a {
   font-size: 1.1rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .footer-contacto ul {
   display: flex;
@@ -552,13 +563,13 @@ a {
 
 .footer-copy {
   border-top: 1px solid #3D1F0A;
-  margin-top: 2rem;
-  padding-top: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
   text-align: center;
 }
 .footer-copy p {
   color: #A87820;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1rem;
 }
 
