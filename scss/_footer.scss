@@ -2,7 +2,7 @@
 @use "mixins" as *;
 
 .footer{
-    background-color: darken($color-fondo, 2%);
+    background-color: color.adjust($color-fondo, $lightness: -2%);
     border-top: 1px solid $color-dorado;
     padding: $spacing-lg $spacing-md;
 

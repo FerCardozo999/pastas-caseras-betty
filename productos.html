@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,8 +28,66 @@
     <title>Productos — Pastas Caseras Betty</title>
   </head>
   <body>
+    <!-- SVGS -->
+    <svg style="display: none">
+      <defs>
+        <symbol id="icon-sorrentino" viewBox="0 0 100 100">
+          <path d="M15 62 Q15 38 40 38 Q65 38 65 62 Q65 76 40 76 Q15 76 15 62 Z" />
+          <path d="M18 60 Q40 50 62 60" />
+          <path d="M45 68 Q65 60 85 68 Q85 80 65 82 Q45 80 45 68 Z" />
+        </symbol>
+
+        <symbol id="icon-sorrentino-verde" viewBox="0 0 100 100">
+          <path d="M18 62 Q18 38 45 38 Q72 38 72 62 Q72 78 45 78 Q18 78 18 62 Z" />
+          <path d="M22 60 Q45 50 68 60" />
+          <path d="M62 30 Q68 18 80 20 Q78 32 66 34 Q60 32 62 30 Z" />
+          <path d="M64 22 L70 30" />
+        </symbol>
+
+        <symbol id="icon-raviol" viewBox="0 0 100 100">
+          <path d="M25 25 Q35 18 45 25 Q55 18 65 25 Q72 35 65 45 Q72 55 65 65 Q55 72 45 65 Q35 72 25 65 Q18 55 25 45 Q18 35 25 25 Z" />
+          <line x1="30" y1="30" x2="60" y2="60" stroke-dasharray="3 4" />
+          <line x1="60" y1="30" x2="30" y2="60" stroke-dasharray="3 4" />
+        </symbol>
+
+        <symbol id="icon-capeleti" viewBox="0 0 100 100">
+          <circle cx="50" cy="55" r="24" />
+          <circle cx="50" cy="55" r="9" />
+          <path d="M38 34 Q50 18 62 34" />
+        </symbol>
+
+        <symbol id="icon-canelon" viewBox="0 0 100 100">
+          <rect x="15" y="30" width="70" height="16" rx="8" />
+          <rect x="15" y="52" width="70" height="16" rx="8" />
+          <line x1="20" y1="38" x2="80" y2="38" stroke-dasharray="2 4" />
+          <line x1="20" y1="60" x2="80" y2="60" stroke-dasharray="2 4" />
+        </symbol>
+
+        <symbol id="icon-lasaña" viewBox="0 0 100 100">
+          <rect x="20" y="25" width="60" height="10" rx="2" />
+          <rect x="18" y="40" width="64" height="10" rx="2" />
+          <rect x="20" y="55" width="60" height="10" rx="2" />
+          <rect x="18" y="70" width="64" height="10" rx="2" />
+        </symbol>
+
+        <symbol id="icon-tarta" viewBox="0 0 100 100">
+          <circle cx="50" cy="55" r="30" />
+          <path d="M50 25 A30 30 0 0 1 50 85" stroke-dasharray="0" />
+          <line x1="50" y1="25" x2="50" y2="85" />
+          <line x1="24" y1="40" x2="76" y2="70" />
+          <line x1="24" y1="70" x2="76" y2="40" />
+        </symbol>
+
+        <symbol id="icon-fideos" viewBox="0 0 100 100">
+          <path d="M15 35 Q30 20 45 35 Q60 50 75 35 Q90 20 95 30" />
+          <path d="M15 50 Q30 35 45 50 Q60 65 75 50 Q90 35 95 45" />
+          <path d="M15 65 Q30 50 45 65 Q60 80 75 65 Q90 50 95 60" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <!-- NAV -->
     <header>
-      <!-- NAV -->
       <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
@@ -84,6 +142,315 @@
         </div>
       </nav>
     </header>
+    <!-- MAIN -->
+    <main>
+      <section class="productos-hero">
+        <h1>Nuestra Carta</h1>
+        <p>Pastas artesanales amasadas a mano, todos los dias</p>
+      </section>
+
+      <section class="productos-carousel">
+        <div class="d-lg-none">
+          <div id="carouselproductos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Sorrentinos"></button>
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="1" aria-label="Sorrentinos Verdes"></button>
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="2" aria-label="Ravioles"></button>
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="3" aria-label="Capeletis"></button>
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="4" aria-label="Canelones"></button>
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="5" aria-label="Lasañas"></button>
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="6" aria-label="Fideos"></button>
+              <button type="button" data-bs-target="#carouselproductos" data-bs-slide-to="7" aria-label="Tartas"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-sorrentino"></use></svg>
+                  <h2>Sorrentinos</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Calabaza con Nuez</li>
+                    <li>Ricota y Espinaca</li>
+                    <li>Calabaza</li>
+                    <li>Espinaca</li>
+                    <li>Caprese</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="carousel-item">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-sorrentino-verde"></use></svg>
+                  <h2>Sorrentinos Verdes</h2>
+                  <p class="producto-formato">masa de espinaca - 500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Calabaza con Nuez</li>
+                    <li>Ricota y Espinaca</li>
+                    <li>Calabaza</li>
+                    <li>Espinaca</li>
+                    <li>Caprese</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="carousel-item">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-raviol"></use></svg>
+                  <h2>Ravioles</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Calabaza con Nuez</li>
+                    <li>Ricota y Espinaca</li>
+                    <li>Calabaza</li>
+                    <li>Espinaca</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="carousel-item">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-capeleti"></use></svg>
+                  <h2>Capeletis</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="carousel-item">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-fideos"></use></svg>
+                  <h2>Fideos</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Huevo</li>
+                    <li>Espinaca</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="carousel-item">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-canelon"></use></svg>
+                  <h2>Canelones</h2>
+                  <p class="producto-formato">3 unidades</p>
+                  <ul class="producto-variedades">
+                    <li>Carne</li>
+                    <li>Pollo</li>
+                    <li>Verduras</li>
+                    <li>Choclo</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="carousel-item">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-lasaña"></use></svg>
+                  <h2>Lasañas</h2>
+                  <ul class="producto-variedades">
+                    <li>Carne</li>
+                    <li>Pollo</li>
+                    <li>Verduras</li>
+                    <li>Choclo</li>
+                  </ul>
+                </article>
+              </div>
+
+              <div class="carousel-item">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-tarta"></use></svg>
+                  <h2>Tartas</h2>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Verduras</li>
+                    <li>Choclo</li>
+                    <li>Pollo</li>
+                    <li>Atun</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselproductos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselproductos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="d-none d-lg-block">
+        <div id="carouselDesktop" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active" aria-label="Grupo 1"></button>
+            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1" aria-label="Grupo 2"></button>
+            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="2" aria-label="Grupo 3"></button>
+            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="3" aria-label="Grupo 4"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="producto-fila">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-sorrentino"></use></svg>
+                  <h2>Sorrentinos</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Calabaza con Nuez</li>
+                    <li>Ricota y Espinaca</li>
+                    <li>Calabaza</li>
+                    <li>Espinaca</li>
+                    <li>Caprese</li>
+                  </ul>
+                </article>
+
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-sorrentino-verde"></use></svg>
+                  <h2>Sorrentinos Verdes</h2>
+                  <p class="producto-formato">masa de espinaca - 500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Calabaza con Nuez</li>
+                    <li>Ricota y Espinaca</li>
+                    <li>Calabaza</li>
+                    <li>Espinaca</li>
+                    <li>Caprese</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="producto-fila">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-raviol"></use></svg>
+                  <h2>Ravioles</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Calabaza con Nuez</li>
+                    <li>Ricota y Espinaca</li>
+                    <li>Calabaza</li>
+                    <li>Espinaca</li>
+                  </ul>
+                </article>
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-capeleti"></use></svg>
+                  <h2>Capeletis</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="producto-fila">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-fideos"></use></svg>
+                  <h2>Fideos</h2>
+                  <p class="producto-formato">500 gramos</p>
+                  <ul class="producto-variedades">
+                    <li>Huevo</li>
+                    <li>Espinaca</li>
+                  </ul>
+                </article>
+
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-canelon"></use></svg>
+                  <h2>Canelones</h2>
+                  <p class="producto-formato">3 unidades</p>
+                  <ul class="producto-variedades">
+                    <li>Carne</li>
+                    <li>Pollo</li>
+                    <li>Verduras</li>
+                    <li>Choclo</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="producto-fila">
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-lasaña"></use></svg>
+                  <h2>Lasañas</h2>
+                  <ul class="producto-variedades">
+                    <li>Carne</li>
+                    <li>Pollo</li>
+                    <li>Verduras</li>
+                    <li>Choclo</li>
+                  </ul>
+                </article>
+
+                <article class="producto-card">
+                  <svg class="producto-icono"><use href="#icon-tarta"></use></svg>
+                  <h2>Tartas</h2>
+                  <ul class="producto-variedades">
+                    <li>Jamon y Queso</li>
+                    <li>Verduras</li>
+                    <li>Choclo</li>
+                    <li>Pollo</li>
+                    <li>Atun</li>
+                  </ul>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <section class="productos-cta">
+        <h2>¿Ya elegiste?</h2>
+        <p>Mira los precios completos en nuestra carta y hace tu pedido</p>
+        <a class="btn-dorado" href=".precios pastas" target="_blank">Hace tu pedido</a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-contenido">
+        <div class="footer-marca">
+          <div class="footer-marca-logo">
+            <img src="./images/logotipo-sin-fondo-150x150.webp" alt="Logo Pastas Caseras Betty" />
+            <h2>Pastas Caseras Betty</h2>
+          </div>
+          <p>Pastas artesanales amasadas a mano en Salta, con el sabor de lo casero</p>
+        </div>
+
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Salta, Argentina</li>
+            <li>Tel: (387) 123-4567</li>
+            <li>pastas.betty@email.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 Pastas Caseras Betty - Todos los derechos reservados</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
