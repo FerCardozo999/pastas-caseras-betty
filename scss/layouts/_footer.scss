@@ -1,5 +1,5 @@
-@use "variables" as *;
-@use "mixins" as *;
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 
 .footer{
     background-color:#1a0e06;

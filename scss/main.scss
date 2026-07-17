@@ -1,9 +1,11 @@
-@use "variables" as *;
-@use "mixins" as *;
-@use "reset";
-@use "navbar";
-@use "hero";
-@use "nosotros";
-@use "productos";
-@use "footer";
+@use "base/variables" as *;
+@use "base/mixins" as *;
+@use "base/reset";
+@use "layouts/navbar";
+@use "pages/hero";
+@use "pages/nosotros";
+@use "pages/productos";
+@use "pages/faq";
+@use "pages/contacto";
+@use "layouts/footer";
 

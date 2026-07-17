@@ -1,5 +1,5 @@
-@use "variables" as *;
-@use "mixins" as *;
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
 
 .nosotros-bloque{
     display: grid;

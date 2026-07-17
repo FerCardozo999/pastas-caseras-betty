@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -84,6 +84,97 @@
         </div>
       </nav>
     </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="contacto-hero">
+        <h1>Hablemos</h1>
+        <p>¿Tenés una consulta, querés hacer un pedido o te interesa revender nuestras pastas? Escribinos y te respondemos a la brevedad.</p>
+      </section>
+
+      <!-- FORMULARIO  -->
+      <section class="contacto-contenido">
+        <form class="contacto-form" action="#" method="post">
+          <div class="form-grupo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="tu@email.com" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefono">Telefono <span class="campo-opcional">(opcional)</span></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="(387) 123-4567" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="asunto">¿En que te podemos ayudar?</label>
+            <select name="asunto" id="asunto" required>
+              <option value="" disabled selected>Elegi una opcion</option>
+              <option value="consulta">Tengo una consulta</option>
+              <option value="reventa">Quiero revender sus productos</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="5" placeholder="Contanos..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-dorado">Enviar mensaje</button>
+        </form>
+
+        <aside class="contacto-datos">
+          <div class="contacto-datos-bloque contacto-reventa">
+            <h2>¿Tenes un negocio?</h2>
+            <p>Si tenes un almacen, kiosco, restaurante o cualquier local gastronomico y queres sumar nuestras pastas, escribinos.</p>
+          </div>
+
+          <div class="contacto-datos-bloque">
+            <h2>Contacto directo</h2>
+            <a class="btn-whatsapp" href="https://wa.me/5493875760449?text=Hola%21%20Quiero%20consultar%20sobre%20las%20pastas%20caseras." target="_blank">
+              <svg class="whatsapp-icono" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.4 0-4.633-.78-6.44-2.098l-.377-.282-3.2 1.072 1.072-3.2-.282-.377A9.953 9.953 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"
+                />
+              </svg>
+              Escribinos por WhatsApp
+            </a>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-contenido">
+        <div class="footer-marca">
+          <div class="footer-marca-logo">
+            <img src="./images/logotipo-sin-fondo-150x150.webp" alt="Logo Pastas Caseras Betty" />
+            <h2>Pastas Caseras Betty</h2>
+          </div>
+          <p>Pastas artesanales amasadas a mano en Salta, con el sabor de lo casero</p>
+        </div>
+
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <ul>
+            <li>Salta, Argentina</li>
+            <li>Tel: (387) 123-4567</li>
+            <li>pastas.betty@email.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2025 Pastas Caseras Betty - Todos los derechos reservados</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

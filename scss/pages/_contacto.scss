@@ -1,0 +1,165 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.contacto-hero{
+    text-align: center;
+    padding: $spacing-xl $spacing-md $spacing-lg;
+
+    h1{
+        font-family: $font-titulo;
+        color: $color-dorado;
+        letter-spacing: 0.3rem;
+        font-size: 2rem;
+        margin-bottom: $spacing-sm;
+
+        @include desktop{
+            font-size: 3rem;
+        }
+    }
+
+    p{
+        color: $color-dorado-suave;
+        font-style: italic;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+}
+
+.contacto-contenido{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-xl;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 $spacing-md $spacing-xl;
+
+    @include desktop{
+        grid-template-columns: 3fr 2fr;
+        max-width: 1000px;
+        align-items: center;
+    }
+}
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-md;
+    text-align: center;
+
+    @include desktop{
+        text-align: left;
+    }
+}
+
+.form-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: left;
+
+    label{
+        font-family: $font-titulo;
+        color: $color-dorado;
+        font-size: 0.95rem;
+        letter-spacing: 0.05rem;
+    }
+
+    input,
+    select,
+    textarea{
+        background-color: transparent;
+        border: 1px solid $color-borde;
+        color: $color-texto;
+        padding: 0.75rem 1rem;
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        border-radius: 2px;
+        transition: border-color 0.3 ease;
+
+        &:focus{
+            outline: none;
+            border-color: $color-dorado;
+        }
+
+        &::placeholder{
+            color: rgba($color-texto, 0.4);
+        }
+    }
+
+    select{
+        appearance: none;
+        cursor: pointer;
+
+        option{
+            background-color: $color-fondo;
+            color: $color-texto;
+        }
+    }
+
+    textarea{
+        resize: vertical;
+    }
+}
+
+.contacto-datos{
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+    text-align: center;
+
+    @include desktop{
+        position: sticky;
+        top: 2rem;
+    }
+}
+
+.contacto-datos-bloque{
+    h2{
+        font-family: $font-titulo;
+        color: $color-dorado;
+        font-size: 1.3rem;
+        margin-bottom: $spacing-sm;
+        text-align: center;
+    }
+}
+
+.contacto-reventa{
+    border-top: 1px solid $color-borde;
+    padding-top: $spacing-lg;
+
+    @include desktop{
+        border-bottom: none;
+        padding-bottom: 0;
+        border-top: none;
+        padding-top: 0;
+    }
+}
+
+.btn-whatsapp{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: $spacing-md;
+    padding: 0.75rem 1.5rem;
+    background-color: #25D366;
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    justify-content: center;
+
+    &:hover{
+        background-color: #1DA851;
+        color: #fff;
+    }
+}
+
+.whatsapp-icono{
+    width: 22px;
+    height: 22px;
+    fill: #fff;
+    flex-shrink: 0;
+}

@@ -400,9 +400,13 @@ a {
   background-color: #C9952A;
   opacity: 1;
 }
-.productos-carousel .carousel-control-prev-icon,
-.productos-carousel .carousel-control-next-icon {
-  filter: invert(1) sepia(1) saturate(5) hue-rotate(5deg);
+.productos-carousel .carousel-control-prev,
+.productos-carousel .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
 }
 
 .productos-cta {
@@ -460,6 +464,218 @@ a {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.hero-faq {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+.hero-faq h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #C9952A;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 992px) {
+  .hero-faq h1 {
+    font-size: 3rem;
+  }
+}
+.hero-faq p {
+  color: #A87820;
+  font-style: italic;
+}
+
+.faq-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+.accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: #3D1F0A;
+  --bs-accordion-btn-color: #C9952A;
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-active-bg: rgba(201, 149, 42, 0.08);
+  --bs-accordion-active-color: #C9952A;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-button {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+}
+.accordion-button::after {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(5deg);
+}
+
+.accordion-body {
+  color: #F5EDD6;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.contacto-hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+.contacto-hero h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #C9952A;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 992px) {
+  .contacto-hero h1 {
+    font-size: 3rem;
+  }
+}
+.contacto-hero p {
+  color: #A87820;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contacto-contenido {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+@media (min-width: 992px) {
+  .contacto-contenido {
+    grid-template-columns: 3fr 2fr;
+    max-width: 1000px;
+    align-items: center;
+  }
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .contacto-form {
+    text-align: left;
+  }
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+}
+.form-grupo label {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #C9952A;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+}
+.form-grupo input,
+.form-grupo select,
+.form-grupo textarea {
+  background-color: transparent;
+  border: 1px solid #3D1F0A;
+  color: #F5EDD6;
+  padding: 0.75rem 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  border-radius: 2px;
+  transition: border-color 0.3 ease;
+}
+.form-grupo input:focus,
+.form-grupo select:focus,
+.form-grupo textarea:focus {
+  outline: none;
+  border-color: #C9952A;
+}
+.form-grupo input::placeholder,
+.form-grupo select::placeholder,
+.form-grupo textarea::placeholder {
+  color: rgba(245, 237, 214, 0.4);
+}
+.form-grupo select {
+  appearance: none;
+  cursor: pointer;
+}
+.form-grupo select option {
+  background-color: #201208;
+  color: #F5EDD6;
+}
+.form-grupo textarea {
+  resize: vertical;
+}
+
+.contacto-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .contacto-datos {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+.contacto-datos-bloque h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #C9952A;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.contacto-reventa {
+  border-top: 1px solid #3D1F0A;
+  padding-top: 2rem;
+}
+@media (min-width: 992px) {
+  .contacto-reventa {
+    border-bottom: none;
+    padding-bottom: 0;
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #25D366;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  justify-content: center;
+}
+.btn-whatsapp:hover {
+  background-color: #1DA851;
+  color: #fff;
+}
+
+.whatsapp-icono {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+  flex-shrink: 0;
 }
 
 .footer {
