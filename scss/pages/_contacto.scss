@@ -6,11 +6,10 @@
     padding: $spacing-xl $spacing-md $spacing-lg;
 
     h1{
-        font-family: $font-titulo;
-        color: $color-dorado;
-        letter-spacing: 0.3rem;
         font-size: 2rem;
         margin-bottom: $spacing-sm;
+
+        @include titulo-pagina;
 
         @include desktop{
             font-size: 3rem;
@@ -18,7 +17,7 @@
     }
 
     p{
-        color: $color-dorado-suave;
+        color: $color-texto;
         font-style: italic;
         max-width: 600px;
         margin: 0 auto;

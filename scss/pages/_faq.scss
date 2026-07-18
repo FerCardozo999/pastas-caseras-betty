@@ -6,11 +6,11 @@
     padding: $spacing-xl $spacing-md $spacing-lg;
 
     h1{
-        font-family: $font-titulo;
-        color: $color-dorado;
         letter-spacing: 0.3rem;
         font-size: 2rem;
         margin-bottom: $spacing-sm;
+
+        @include titulo-pagina;
 
         @include desktop{
             font-size: 3rem;
@@ -18,7 +18,7 @@
     }
 
     p{
-        color: $color-dorado-suave;
+        color: $color-texto;
         font-style: italic;
     }
 }
@@ -53,4 +53,22 @@
     color: $color-texto;
     line-height: 1.7;
     font-size: 0.95rem;
+}
+
+.faq-cta {
+    text-align: center;
+    padding: $spacing-xl $spacing-md;
+    border-top: 1px solid $color-borde;
+
+    h2 {
+        font-family: $font-titulo;
+        color: $color-dorado;
+        font-size: 1.5rem;
+        margin-bottom: $spacing-sm;
+    }
+
+    p {
+        color: $color-texto;
+        margin-bottom: $spacing-lg;
+    }
 }

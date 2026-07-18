@@ -31,25 +31,6 @@
     <!-- SVGS -->
     <svg style="display: none">
       <defs>
-        <symbol id="icon-sorrentino" viewBox="0 0 100 100">
-          <path d="M15 62 Q15 38 40 38 Q65 38 65 62 Q65 76 40 76 Q15 76 15 62 Z" />
-          <path d="M18 60 Q40 50 62 60" />
-          <path d="M45 68 Q65 60 85 68 Q85 80 65 82 Q45 80 45 68 Z" />
-        </symbol>
-
-        <symbol id="icon-sorrentino-verde" viewBox="0 0 100 100">
-          <path d="M18 62 Q18 38 45 38 Q72 38 72 62 Q72 78 45 78 Q18 78 18 62 Z" />
-          <path d="M22 60 Q45 50 68 60" />
-          <path d="M62 30 Q68 18 80 20 Q78 32 66 34 Q60 32 62 30 Z" />
-          <path d="M64 22 L70 30" />
-        </symbol>
-
-        <symbol id="icon-raviol" viewBox="0 0 100 100">
-          <path d="M25 25 Q35 18 45 25 Q55 18 65 25 Q72 35 65 45 Q72 55 65 65 Q55 72 45 65 Q35 72 25 65 Q18 55 25 45 Q18 35 25 25 Z" />
-          <line x1="30" y1="30" x2="60" y2="60" stroke-dasharray="3 4" />
-          <line x1="60" y1="30" x2="30" y2="60" stroke-dasharray="3 4" />
-        </symbol>
-
         <symbol id="icon-capeleti" viewBox="0 0 100 100">
           <circle cx="50" cy="55" r="24" />
           <circle cx="50" cy="55" r="9" />
@@ -101,8 +82,8 @@
             <li class="nav-item">
               <a class="nav-link" href="./nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item active" aria-current="page">
-              <a class="nav-link" href="./productos.html">Productos</a>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./faq.html">FaQ</a>
@@ -145,7 +126,7 @@
     <!-- MAIN -->
     <main>
       <section class="productos-hero">
-        <h1>Nuestra Carta</h1>
+        <h1>Nuestras Pastas</h1>
         <p>Pastas artesanales amasadas a mano, todos los dias</p>
       </section>
 
@@ -166,7 +147,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <article class="producto-card">
-                  <svg class="producto-icono"><use href="#icon-sorrentino"></use></svg>
+                  <img class="producto-img" src="./images/sorrentinos.webp" alt="Sorrentinos caseros con salsa" />
                   <h2>Sorrentinos</h2>
                   <p class="producto-formato">500 gramos</p>
                   <ul class="producto-variedades">
@@ -182,7 +163,7 @@
 
               <div class="carousel-item">
                 <article class="producto-card">
-                  <svg class="producto-icono"><use href="#icon-sorrentino-verde"></use></svg>
+                  <img class="producto-img" src="./images/sorrentinos-verdes.webp" alt="Sorrentinos verde con salsa" />
                   <h2>Sorrentinos Verdes</h2>
                   <p class="producto-formato">masa de espinaca - 500 gramos</p>
                   <ul class="producto-variedades">
@@ -198,7 +179,7 @@
 
               <div class="carousel-item">
                 <article class="producto-card">
-                  <svg class="producto-icono"><use href="#icon-raviol"></use></svg>
+                  <img class="producto-img" src="./images/ravioles.webp" alt="Ravioles caseros con salsa" />
                   <h2>Ravioles</h2>
                   <p class="producto-formato">500 gramos</p>
                   <ul class="producto-variedades">
@@ -297,11 +278,12 @@
             <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="3" aria-label="Grupo 4"></button>
           </div>
 
+          <!-- DESKTOP -->
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="producto-fila">
                 <article class="producto-card">
-                  <svg class="producto-icono"><use href="#icon-sorrentino"></use></svg>
+                  <img class="producto-img" src="./images/sorrentinos.webp" alt="Sorrentinos caseros con salsa" />
                   <h2>Sorrentinos</h2>
                   <p class="producto-formato">500 gramos</p>
                   <ul class="producto-variedades">
@@ -315,7 +297,7 @@
                 </article>
 
                 <article class="producto-card">
-                  <svg class="producto-icono"><use href="#icon-sorrentino-verde"></use></svg>
+                  <img class="producto-img" src="./images/sorrentinos-verdes.webp" alt="Sorrentinos verde con salsa" />
                   <h2>Sorrentinos Verdes</h2>
                   <p class="producto-formato">masa de espinaca - 500 gramos</p>
                   <ul class="producto-variedades">
@@ -333,7 +315,7 @@
             <div class="carousel-item">
               <div class="producto-fila">
                 <article class="producto-card">
-                  <svg class="producto-icono"><use href="#icon-raviol"></use></svg>
+                  <img class="producto-img" src="./images/ravioles.webp" alt="Ravioles caseros con salsa" />
                   <h2>Ravioles</h2>
                   <p class="producto-formato">500 gramos</p>
                   <ul class="producto-variedades">
@@ -423,7 +405,7 @@
       <section class="productos-cta">
         <h2>¿Ya elegiste?</h2>
         <p>Mira los precios completos en nuestra carta y hace tu pedido</p>
-        <a class="btn-dorado" href=".precios pastas" target="_blank">Hace tu pedido</a>
+        <a class="btn-dorado" href="https://wa.me/5493875760449?text=Hola%21%20Quiero%20hacer%20un%20pedido%20de%20pastas." target="_blank">Hacé tu pedido</a>
       </section>
     </main>
 

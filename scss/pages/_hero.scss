@@ -50,11 +50,10 @@
 
         h1{
             text-align: center;
-            font-family: $font-titulo;
-            color: $color-dorado;
-            letter-spacing: $spacing-sm;
             font-size: 2rem;
             margin-bottom: 2rem;
+
+            @include titulo-pagina;
 
             @include tablet{
                 font-size: 2.5rem;
@@ -137,5 +136,41 @@
                 }
              }
         }
+    }
+}
+
+// SECTION VALORES
+.valores {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+    text-align: center;
+    padding: $spacing-xl $spacing-md;
+    border-top: 1px solid $color-borde;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.valor {
+    padding: $spacing-md;
+
+    h3 {
+        font-family: $font-titulo;
+        color: $color-dorado;
+        font-size: 1.2rem;
+        margin-bottom: $spacing-sm;
+        letter-spacing: 0.1rem;
+
+        @include desktop {
+            font-size: 1.4rem;
+        }
+    }
+
+    p {
+        color: $color-dorado-suave;
+        font-size: 0.9rem;
+        font-style: italic;
     }
 }

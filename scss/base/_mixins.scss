@@ -17,3 +17,14 @@
         @content;
     }
 }
+
+
+@mixin titulo-pagina {
+    font-family: $font-titulo;
+    color: $color-dorado;
+    letter-spacing: 0.3rem;
+    text-shadow: 
+        0 0 10px rgba($color-dorado, 0.6),
+        0 0 20px rgba($color-dorado, 0.3),
+        0 0 40px rgba($color-dorado, 0.15);
+}

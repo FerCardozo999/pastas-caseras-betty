@@ -6,10 +6,9 @@
     padding: 4rem 1rem 2rem;
 
     h1{
-        font-family: $font-titulo;
-        color: $color-dorado;
-        letter-spacing: 0.3rem;
         font-size: 2rem;
+
+        @include titulo-pagina;
 
         @include desktop{
             font-size: 3rem;
@@ -17,7 +16,7 @@
     }
 
     p{
-        color: $color-dorado-suave;
+        color: $color-texto;
         font-style: italic;
     }
 }
@@ -33,10 +32,16 @@
         font-family: $font-titulo;
         color: $color-dorado;
         font-size:  1.6rem;
-        margin: $spacing-md 0 $spacing-sm;
+        margin: $spacing-md 0 0.25rem;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        text-shadow: 
+            0 0 10px rgba($color-dorado, 0.6),
+            0 0 20px rgba($color-dorado, 0.3),
+            0 0 40px rgba($color-dorado, 0.15);
 
         @include desktop{
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
     .producto-formato{
@@ -74,7 +79,7 @@
     gap: $spacing-sm;
 
     li{
-        border: 1px solid $color-borde;
+        border: 1px solid rgba($color-dorado, 0.5);
         color: $color-texto;
         padding: 0.35rem 0.9rem;
         border-radius: 999px;
@@ -149,15 +154,33 @@
     }
 }
 
-.btn-dorado {
+%btn-base {
     display: inline-block;
-    color: $color-dorado;
-    border: 1px solid $color-dorado;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    font-size: 0.95rem;
     text-align: center;
+    border: 2px solid $color-dorado;
     transition: all 0.3s ease;
+}
+
+.btn-dorado {
+    @extend %btn-base;
+    background-color: $color-dorado;
+    color: $color-fondo;
+
+    &:hover {
+        background-color: transparent;
+        color: $color-dorado;
+    }
+}
+
+.btn-dorado-outline {
+    @extend %btn-base;
+    background-color: transparent;
+    color: $color-dorado;
 
     &:hover {
         background-color: $color-dorado;
@@ -168,5 +191,18 @@
 .producto-fila{
     display: flex;
     justify-content: center;
-    gap: $spacing-lg;
+    gap: $spacing-xl;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.producto-img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+
+    @include desktop{
+        max-width: 220px;
+    }
 }

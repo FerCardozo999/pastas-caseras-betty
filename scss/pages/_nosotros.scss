@@ -39,17 +39,19 @@
         height: 220px;
         object-fit: cover;
         border-radius: 4px;
+        border: 1px solid rgba($color-dorado, 0.25);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
     @include tablet{
         img{
-            height: 320px;
+            height: 260px;
         }
     }
 
     @include desktop{
         img{
-            height: 380px;
+            height: 300px;
         }
     }
 }
