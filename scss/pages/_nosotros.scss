@@ -11,6 +11,15 @@
     padding: $spacing-lg $spacing-md;
     border-bottom: 1px solid rgba($color-dorado, 0.25);
     padding-bottom: $spacing-lg;
+    animation: fadeIn 0.8s ease both;
+
+    &:nth-child(2){
+        animation-delay: 0.15s;
+    }
+
+    &:nth-child(3){
+        animation-delay: 0.15s;
+    }
 
     &:last-child{
     border-bottom: none;
@@ -33,6 +42,8 @@
 
 .nosotros-img{
     grid-area: imagen;
+    overflow: hidden;
+    border-radius: 4px;
 
     img{
         width: 100%;
@@ -41,6 +52,11 @@
         border-radius: 4px;
         border: 1px solid rgba($color-dorado, 0.25);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.5s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 
     @include tablet{

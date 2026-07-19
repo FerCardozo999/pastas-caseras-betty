@@ -27,6 +27,7 @@
     margin: 0 auto $spacing-xl;
     text-align: center;
     padding: $spacing-lg;
+    animation: fadeIn 0.8s ease both;
 
     h2{
         font-family: $font-titulo;
@@ -201,6 +202,12 @@
     height: 280px;
     object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.4ease, box-shadow 0.4s ease;
+
+    &:hover{
+        transform: scale(1.03);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
 
     @include desktop{
         max-width: 220px;
