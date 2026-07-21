@@ -182,7 +182,7 @@ a {
     font-size: 5rem;
   }
 }
-.hero .hero-contenido h2 {
+.hero .hero-contenido .hero-subtitulo {
   font-style: italic;
   text-align: center;
   color: #A87820;
@@ -191,18 +191,18 @@ a {
   animation: fadeIn 0.8s ease 0.2s both;
 }
 @media (min-width: 768px) {
-  .hero .hero-contenido h2 {
+  .hero .hero-contenido .hero-subtitulo {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 992px) {
-  .hero .hero-contenido h2 {
+  .hero .hero-contenido .hero-subtitulo {
     font-size: 3rem;
     margin-bottom: 3rem;
   }
 }
-.hero .hero-contenido h3 {
+.hero .hero-contenido .hero-bajada {
   color: #F5EDD6;
   text-align: center;
   font-size: 0.9rem;
@@ -211,13 +211,13 @@ a {
   animation: fadeIn 0.8s ease 0.4s both;
 }
 @media (min-width: 768px) {
-  .hero .hero-contenido h3 {
+  .hero .hero-contenido .hero-bajada {
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
 }
 @media (min-width: 992px) {
-  .hero .hero-contenido h3 {
+  .hero .hero-contenido .hero-bajada {
     font-size: 1.5rem;
     margin-bottom: 3rem;
   }
@@ -366,7 +366,7 @@ a {
 }
 @media (min-width: 992px) {
   .nosotros-txt p {
-    font-size: 1.2;
+    font-size: 1.2rem;
   }
 }
 
@@ -427,7 +427,7 @@ a {
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transition: transform 0.3rs ease;
+  transition: transform 0.3s ease;
 }
 @media (min-width: 992px) {
   .producto-icono {
@@ -560,7 +560,7 @@ a {
   height: 280px;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.4ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .producto-img:hover {
   transform: scale(1.03);
@@ -572,11 +572,11 @@ a {
   }
 }
 
-.hero-faq {
+.faq-hero {
   text-align: center;
   padding: 4rem 1rem 2rem;
 }
-.hero-faq h1 {
+.faq-hero h1 {
   letter-spacing: 0.3rem;
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -586,11 +586,11 @@ a {
   text-shadow: 0 0 10px rgba(201, 149, 42, 0.6), 0 0 20px rgba(201, 149, 42, 0.3), 0 0 40px rgba(201, 149, 42, 0.15);
 }
 @media (min-width: 992px) {
-  .hero-faq h1 {
+  .faq-hero h1 {
     font-size: 3rem;
   }
 }
-.hero-faq p {
+.faq-hero p {
   color: #F5EDD6;
   font-style: italic;
 }
@@ -733,7 +733,7 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   border-radius: 2px;
-  transition: border-color 0.3 ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .form-grupo input:focus,
 .form-grupo select:focus,
@@ -764,12 +764,6 @@ a {
   flex-direction: column;
   gap: 2rem;
   text-align: center;
-}
-@media (min-width: 992px) {
-  .contacto-datos {
-    position: sticky;
-    top: 2rem;
-  }
 }
 
 .contacto-datos-bloque h2 {

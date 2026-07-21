@@ -61,7 +61,7 @@
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    transition: transform 0.3rs ease;
+    transition: transform 0.3s ease;
 
     @include desktop{
         width: 120px;
@@ -202,7 +202,7 @@
     height: 280px;
     object-fit: cover;
     border-radius: 8px;
-    transition: transform 0.4ease, box-shadow 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 
     &:hover{
         transform: scale(1.03);

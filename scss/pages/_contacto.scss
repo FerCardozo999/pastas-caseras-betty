@@ -74,7 +74,7 @@
         font-family: "Lato", sans-serif;
         font-size: 1rem;
         border-radius: 2px;
-        transition: border-color 0.3 ease, box-shadow 0.3s ease;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
         &:focus{
             outline: none;
@@ -107,11 +107,6 @@
     flex-direction: column;
     gap: $spacing-lg;
     text-align: center;
-
-    @include desktop{
-        position: sticky;
-        top: 2rem;
-    }
 }
 
 .contacto-datos-bloque{

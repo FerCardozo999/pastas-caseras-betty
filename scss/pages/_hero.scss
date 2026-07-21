@@ -26,10 +26,6 @@
                 padding-left: 1rem;
                 max-height: 80vh;
             }
-
-            @include desktop{
-
-            }
         }
     }
 
@@ -73,7 +69,7 @@
 
         }
         
-        h2{
+        .hero-subtitulo{
             font-style: italic;
             text-align: center;
             color: $color-dorado-suave;
@@ -92,7 +88,7 @@
             }
         }
 
-        h3{
+        .hero-bajada{
             color: $color-texto;
             text-align: center;
             font-size: 0.9rem;
