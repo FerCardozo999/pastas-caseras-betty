@@ -2,7 +2,7 @@
 @use "../base/mixins" as *;
 
 .footer{
-    background-color:#1a0e06;
+    background-color:$color-fondo;
     border-top: 1px solid $color-dorado;
     padding: $spacing-md $spacing-md;
 

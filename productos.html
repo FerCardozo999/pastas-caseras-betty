@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Descubrí nuestra carta completa de pastas caseras: sorrentinos, ravioles, capeletis, canelones, lasañas, tartas y fideos frescos. Amasadas a mano todos los días en Salta." />
+    <meta
+      name="description"
+      content="Descubrí nuestra carta completa de pastas caseras: sorrentinos, ravioles, capeletis, canelones, lasañas, tartas y fideos frescos. Amasadas a mano todos los días en Salta."
+    />
     <meta name="keywords" content="carta de pastas, menú pastas caseras, sorrentinos, ravioles, capeletis, canelones, lasañas, tartas, fideos frescos, Salta" />
 
     <!-- GOOGLE FONTS -->
@@ -29,10 +32,9 @@
     <link rel="icon" href="./images/logotipo-sin-fondo-150x150.webp" type="image/webp" />
   </head>
   <body>
-
     <!-- NAV -->
     <header>
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Navegación principal">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="./images/logotipo-sin-fondo-150x150.webp" alt="Logo Pastas caseras Betty" />
@@ -90,7 +92,7 @@
     <main>
       <section class="productos-hero">
         <h1>Nuestras Pastas</h1>
-        <p>Pastas artesanales amasadas a mano, todos los dias</p>
+        <p>Pastas artesanales amasadas a mano, todos los días</p>
       </section>
 
       <section class="productos-carousel">
@@ -114,7 +116,7 @@
                   <h2>Sorrentinos</h2>
                   <p class="producto-formato">500 gramos</p>
                   <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
+                    <li>Jamón y Queso</li>
                     <li>Calabaza con Nuez</li>
                     <li>Ricota y Espinaca</li>
                     <li>Calabaza</li>
@@ -130,11 +132,11 @@
                   <h2>Sorrentinos Verdes</h2>
                   <p class="producto-formato">masa de espinaca - 500 gramos</p>
                   <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
+                    <li>Jamón y Queso</li>
                     <li>Calabaza con Nuez</li>
+                    <li>Ricota y Muzzarella</li>
+                    <li>Ricota y Queso Azul</li>
                     <li>Ricota y Espinaca</li>
-                    <li>Calabaza</li>
-                    <li>Espinaca</li>
                     <li>Caprese</li>
                   </ul>
                 </article>
@@ -146,7 +148,7 @@
                   <h2>Ravioles</h2>
                   <p class="producto-formato">500 gramos</p>
                   <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
+                    <li>Jamón y Queso</li>
                     <li>Calabaza con Nuez</li>
                     <li>Ricota y Espinaca</li>
                     <li>Calabaza</li>
@@ -161,7 +163,7 @@
                   <h2>Capeletis</h2>
                   <p class="producto-formato">500 gramos</p>
                   <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
+                    <li>Jamón y Queso</li>
                   </ul>
                 </article>
               </div>
@@ -210,14 +212,15 @@
                   <img class="producto-img" src="./images/tartas.webp" alt="Tarta casera de verduras" />
                   <h2>Tartas</h2>
                   <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
+                    <li>Jamón y Queso</li>
                     <li>Verduras</li>
                     <li>Choclo</li>
                     <li>Pollo</li>
-                    <li>Atun</li>
+                    <li>Atún</li>
                   </ul>
                 </article>
               </div>
+            </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselproductos" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -229,145 +232,145 @@
             </button>
           </div>
         </div>
-      </section>
 
-      <div class="d-none d-lg-block">
-        <div id="carouselDesktop" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active" aria-label="Grupo 1"></button>
-            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1" aria-label="Grupo 2"></button>
-            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="2" aria-label="Grupo 3"></button>
-            <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="3" aria-label="Grupo 4"></button>
+        <div class="d-none d-lg-block">
+          <div id="carouselDesktop" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="0" class="active" aria-label="Grupo 1"></button>
+              <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="1" aria-label="Grupo 2"></button>
+              <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="2" aria-label="Grupo 3"></button>
+              <button type="button" data-bs-target="#carouselDesktop" data-bs-slide-to="3" aria-label="Grupo 4"></button>
+            </div>
+
+            <!-- DESKTOP -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="producto-fila">
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/sorrentinos.webp" alt="Sorrentinos caseros con salsa" />
+                    <h2>Sorrentinos</h2>
+                    <p class="producto-formato">500 gramos</p>
+                    <ul class="producto-variedades">
+                      <li>Jamón y Queso</li>
+                      <li>Calabaza con Nuez</li>
+                      <li>Ricota y Espinaca</li>
+                      <li>Calabaza</li>
+                      <li>Espinaca</li>
+                      <li>Caprese</li>
+                    </ul>
+                  </article>
+
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/sorrentinos-verdes.webp" alt="Sorrentinos verde con salsa" />
+                    <h2>Sorrentinos Verdes</h2>
+                    <p class="producto-formato">masa de espinaca - 500 gramos</p>
+                    <ul class="producto-variedades">
+                      <li>Jamón y Queso</li>
+                      <li>Calabaza con Nuez</li>
+                      <li>Ricota y Muzzarella</li>
+                      <li>Ricota y Queso Azul</li>
+                      <li>Ricota y Espinaca</li>
+                      <li>Caprese</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="producto-fila">
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/ravioles.webp" alt="Ravioles caseros con salsa" />
+                    <h2>Ravioles</h2>
+                    <p class="producto-formato">500 gramos</p>
+                    <ul class="producto-variedades">
+                      <li>Jamón y Queso</li>
+                      <li>Calabaza con Nuez</li>
+                      <li>Ricota y Espinaca</li>
+                      <li>Calabaza</li>
+                      <li>Espinaca</li>
+                    </ul>
+                  </article>
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/capeletis.webp" alt="Capeletis caseros con salsa" />
+                    <h2>Capeletis</h2>
+                    <p class="producto-formato">500 gramos</p>
+                    <ul class="producto-variedades">
+                      <li>Jamón y Queso</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="producto-fila">
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/fideos.webp" alt="Fideos caseros con salsa" />
+                    <h2>Fideos</h2>
+                    <p class="producto-formato">500 gramos</p>
+                    <ul class="producto-variedades">
+                      <li>Huevo</li>
+                      <li>Espinaca</li>
+                    </ul>
+                  </article>
+
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/canelones.webp" alt="Canelones caseros con salsa" />
+                    <h2>Canelones</h2>
+                    <p class="producto-formato">3 unidades</p>
+                    <ul class="producto-variedades">
+                      <li>Carne</li>
+                      <li>Pollo</li>
+                      <li>Verduras</li>
+                      <li>Choclo</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="producto-fila">
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/lasaña.webp" alt="Lasaña casera" />
+                    <h2>Lasañas</h2>
+                    <ul class="producto-variedades">
+                      <li>Carne</li>
+                      <li>Pollo</li>
+                      <li>Verduras</li>
+                      <li>Choclo</li>
+                    </ul>
+                  </article>
+
+                  <article class="producto-card">
+                    <img class="producto-img" src="./images/tartas.webp" alt="Tarta casera de verduras" />
+                    <h2>Tartas</h2>
+                    <ul class="producto-variedades">
+                      <li>Jamón y Queso</li>
+                      <li>Verduras</li>
+                      <li>Choclo</li>
+                      <li>Pollo</li>
+                      <li>Atún</li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
           </div>
-
-          <!-- DESKTOP -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="producto-fila">
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/sorrentinos.webp" alt="Sorrentinos caseros con salsa" />
-                  <h2>Sorrentinos</h2>
-                  <p class="producto-formato">500 gramos</p>
-                  <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
-                    <li>Calabaza con Nuez</li>
-                    <li>Ricota y Espinaca</li>
-                    <li>Calabaza</li>
-                    <li>Espinaca</li>
-                    <li>Caprese</li>
-                  </ul>
-                </article>
-
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/sorrentinos-verdes.webp" alt="Sorrentinos verde con salsa" />
-                  <h2>Sorrentinos Verdes</h2>
-                  <p class="producto-formato">masa de espinaca - 500 gramos</p>
-                  <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
-                    <li>Calabaza con Nuez</li>
-                    <li>Ricota y Espinaca</li>
-                    <li>Calabaza</li>
-                    <li>Espinaca</li>
-                    <li>Caprese</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="producto-fila">
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/ravioles.webp" alt="Ravioles caseros con salsa" />
-                  <h2>Ravioles</h2>
-                  <p class="producto-formato">500 gramos</p>
-                  <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
-                    <li>Calabaza con Nuez</li>
-                    <li>Ricota y Espinaca</li>
-                    <li>Calabaza</li>
-                    <li>Espinaca</li>
-                  </ul>
-                </article>
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/capeletis.webp" alt="Capeletis caseros con salsa" />
-                  <h2>Capeletis</h2>
-                  <p class="producto-formato">500 gramos</p>
-                  <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="producto-fila">
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/fideos.webp" alt="Fideos caseros con salsa" />
-                  <h2>Fideos</h2>
-                  <p class="producto-formato">500 gramos</p>
-                  <ul class="producto-variedades">
-                    <li>Huevo</li>
-                    <li>Espinaca</li>
-                  </ul>
-                </article>
-
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/canelones.webp" alt="Canelones caseros con salsa" />
-                  <h2>Canelones</h2>
-                  <p class="producto-formato">3 unidades</p>
-                  <ul class="producto-variedades">
-                    <li>Carne</li>
-                    <li>Pollo</li>
-                    <li>Verduras</li>
-                    <li>Choclo</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="producto-fila">
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/lasaña.webp" alt="Lasaña casera" />
-                  <h2>Lasañas</h2>
-                  <ul class="producto-variedades">
-                    <li>Carne</li>
-                    <li>Pollo</li>
-                    <li>Verduras</li>
-                    <li>Choclo</li>
-                  </ul>
-                </article>
-
-                <article class="producto-card">
-                  <img class="producto-img" src="./images/tartas.webp" alt="Tarta casera de verduras" />
-                  <h2>Tartas</h2>
-                  <ul class="producto-variedades">
-                    <li>Jamon y Queso</li>
-                    <li>Verduras</li>
-                    <li>Choclo</li>
-                    <li>Pollo</li>
-                    <li>Atun</li>
-                  </ul>
-                </article>
-              </div>
-            </div>
-          </div>
-
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesktop" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselDesktop" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
         </div>
-      </div>
+      </section>
 
       <section class="productos-cta">
         <h2>¿Ya elegiste?</h2>
         <p>Mira los precios completos en nuestra carta y hace tu pedido</p>
-        <a class="btn-dorado" href="https://wa.me/5493875760449?text=Hola%21%20Quiero%20hacer%20un%20pedido%20de%20pastas." target="_blank">Hacé tu pedido</a>
+        <a class="btn-dorado" href="https://wa.me/5493875760449?text=Hola%21%20Quiero%20hacer%20un%20pedido%20de%20pastas." target="_blank" rel="noopener noreferrer">Hacé tu pedido</a>
       </section>
     </main>
 

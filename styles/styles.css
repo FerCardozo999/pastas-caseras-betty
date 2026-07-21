@@ -110,6 +110,36 @@ a {
   text-shadow: 0 0 10px #A87820;
 }
 
+.btn-dorado-outline, .btn-dorado {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: center;
+  border: 2px solid #C9952A;
+  transition: all 0.3s ease;
+}
+
+.btn-dorado {
+  background-color: #C9952A;
+  color: #201208;
+}
+.btn-dorado:hover {
+  background-color: transparent;
+  color: #C9952A;
+}
+
+.btn-dorado-outline {
+  background-color: transparent;
+  color: #C9952A;
+}
+.btn-dorado-outline:hover {
+  background-color: #C9952A;
+  color: #201208;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -206,7 +236,7 @@ a {
   color: #F5EDD6;
   text-align: center;
   font-size: 0.9rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
   animation: fadeIn 0.8s ease 0.4s both;
 }
@@ -272,6 +302,28 @@ a {
   font-style: italic;
 }
 
+.nosotros-hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+.nosotros-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Playfair Display", Georgia, serif;
+  color: #C9952A;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 10px rgba(201, 149, 42, 0.6), 0 0 20px rgba(201, 149, 42, 0.3), 0 0 40px rgba(201, 149, 42, 0.15);
+}
+@media (min-width: 992px) {
+  .nosotros-hero h1 {
+    font-size: 3rem;
+  }
+}
+.nosotros-hero p {
+  color: #F5EDD6;
+  font-style: italic;
+}
+
 .nosotros-bloque {
   display: grid;
   grid-template-columns: 1fr;
@@ -282,11 +334,11 @@ a {
   padding-bottom: 2rem;
   animation: fadeIn 0.8s ease both;
 }
-.nosotros-bloque:nth-child(2) {
-  animation-delay: 0.15s;
-}
 .nosotros-bloque:nth-child(3) {
   animation-delay: 0.15s;
+}
+.nosotros-bloque:nth-child(4) {
+  animation-delay: 0.3s;
 }
 .nosotros-bloque:last-child {
   border-bottom: none;
@@ -517,36 +569,6 @@ a {
   }
 }
 
-.btn-dorado-outline, .btn-dorado {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-align: center;
-  border: 2px solid #C9952A;
-  transition: all 0.3s ease;
-}
-
-.btn-dorado {
-  background-color: #C9952A;
-  color: #201208;
-}
-.btn-dorado:hover {
-  background-color: transparent;
-  color: #C9952A;
-}
-
-.btn-dorado-outline {
-  background-color: transparent;
-  color: #C9952A;
-}
-.btn-dorado-outline:hover {
-  background-color: #C9952A;
-  color: #201208;
-}
-
 .producto-fila {
   display: flex;
   justify-content: center;
@@ -730,7 +752,7 @@ a {
   border: 1px solid #3D1F0A;
   color: #F5EDD6;
   padding: 0.75rem 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 1rem;
   border-radius: 2px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;

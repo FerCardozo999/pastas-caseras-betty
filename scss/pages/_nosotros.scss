@@ -1,6 +1,26 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 
+.nosotros-hero {
+    text-align: center;
+    padding: $spacing-xl $spacing-md $spacing-lg;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: $spacing-sm;
+        @include titulo-pagina;
+
+        @include desktop {
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        color: $color-texto;
+        font-style: italic;
+    }
+}
+
 .nosotros-bloque{
     display: grid;
     grid-template-columns: 1fr;
@@ -13,12 +33,12 @@
     padding-bottom: $spacing-lg;
     animation: fadeIn 0.8s ease both;
 
-    &:nth-child(2){
+    &:nth-child(3){
         animation-delay: 0.15s;
     }
 
-    &:nth-child(3){
-        animation-delay: 0.15s;
+    &:nth-child(4){
+        animation-delay: 0.3s;
     }
 
     &:last-child{
@@ -94,7 +114,7 @@
         text-align: center;
         color: $color-texto;
         line-height: 1.6;
-        font-size: $spacing-md;
+        font-size: 1rem;
 
         @include tablet{
             font-size: 1.1rem;

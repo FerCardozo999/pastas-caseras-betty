@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+
+%btn-base {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-align: center;
+    border: 2px solid $color-dorado;
+    transition: all 0.3s ease;
+}
+
+.btn-dorado {
+    @extend %btn-base;
+    background-color: $color-dorado;
+    color: $color-fondo;
+
+    &:hover {
+        background-color: transparent;
+        color: $color-dorado;
+    }
+}
+
+.btn-dorado-outline {
+    @extend %btn-base;
+    background-color: transparent;
+    color: $color-dorado;
+
+    &:hover {
+        background-color: $color-dorado;
+        color: $color-fondo;
+    }
+}
